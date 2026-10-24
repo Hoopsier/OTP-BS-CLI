@@ -20,11 +20,13 @@ public class App {
     }
     // hey look at that, the demonstrated way got deprecated by the time I did the
     // task. (java 19+)
-    // Now it's apparently Locale.CONSTANT if it's common, and Locale.of() for
+    // Now it's apparently Locale.COUTRY if it's common, and Locale.of() for
     // everything else
     // Also I didn't need to do any encoding of file stuff when doing this in linux
     // through the cli
-    // Steps: touch (to make the .properties files) -> nothing else
+    // Steps: touch (to make the .properties files) ->
+    // maybe <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    // in pom might is to blame for this working
     Locale locale = Locale.US;
     switch (lang) {
       case 1: // EN

@@ -18,4 +18,4 @@ RUN mvn clean compile
 
 COPY src ./src
 
-CMD ["mvn", "javafx:run"]
+CMD ["java", "-jar","target/application.jar"]
